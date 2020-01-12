@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hsm</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.poolsize">10</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping class="com.domain.UserRegistration" />
+		<mapping class="com.domain.UserRoleStatus" />
+		<mapping class="com.domain.product.ProductLocation" />
+		<mapping class="com.domain.UserRoleAssigned" />
+		<mapping class="com.domain.UserActivity" />
+		<mapping class="com.domain.UserRole" />
+		<mapping class="com.domain.UserActivityLog" />
+		<mapping class="com.domain.UserLogin" />
+		<mapping class="com.domain.product.CityMaster" />
+		<mapping class="com.domain.product.CompanyMaster" />
+		<mapping class="com.domain.product.CountryMaster" />
+		<mapping class="com.domain.product.ProductMaster" />
+		<mapping class="com.domain.shopDepartment.Shop" />
+		<mapping class="com.domain.shopDepartment.ShopOrder" />
+		<mapping class="com.domain.shopDepartment.ContactUs" />
+
+
+
+
+	</session-factory>
+</hibernate-configuration>
+	
